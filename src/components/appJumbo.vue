@@ -1,0 +1,26 @@
+<script>
+export default {
+    data() {
+        return {
+
+        }
+    }
+}
+</script>
+
+<template>
+    <div class="jumbo">
+        <div class="container">
+            <h2>CONTENT GOES HERE</h2>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+.jumbo {
+    min-height: 90px;
+    background-color: #1c1c1c;
+}
+
+/*...*/
+</style>

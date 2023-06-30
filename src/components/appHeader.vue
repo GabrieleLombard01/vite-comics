@@ -10,23 +10,25 @@ export default {
 
 <template>
     <header>
-        <!--LOGO:-->
-        <figure>
-            <img src="../assets/img/dc-logo.png" alt="logo">
-        </figure>
-        <!--NAV:-->
-        <ul class="top-navbar">
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-        </ul>
+        <div class="container flex-header">
+            <!--LOGO:-->
+            <figure>
+                <img src="../assets/img/dc-logo.png" alt="logo">
+            </figure>
+            <!--NAV:-->
+            <ul class="top-navbar">
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+            </ul>
+        </div>
     </header>
 </template>
 
 <style scoped>
-header {
+.flex-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
