@@ -1,7 +1,28 @@
-<script setup>
+<script>
+import appHeader from './components/appHeader.vue';
+export default {
+  data() {
+    return {
 
+    }
+  },
+  components: { appHeader }
+}
 </script>
 
-<template></template>
+<template>
+  <!--HEADER-->
+  <appHeader />
 
-<style scoped></style>
+  <!--MAIN-CONTENT-->
+  <main></main>
+</template>
+
+<style >
+main {
+  background-color: black;
+  width: 100%;
+  height: calc(100% - 180px);
+  margin-top: 100px;
+}
+</style>
