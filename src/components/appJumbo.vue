@@ -20,6 +20,7 @@ export default {
 .jumbo {
     min-height: 90px;
     background-color: #1c1c1c;
+    padding-top: 20px;
 }
 
 /*...*/

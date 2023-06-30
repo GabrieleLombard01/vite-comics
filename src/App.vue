@@ -20,8 +20,6 @@ export default {
   <!--MAIN-CONTENT-->
   <main>
 
-
-
     <!--JUMBO-->
     <appJumbo />
 
@@ -30,10 +28,6 @@ export default {
 
     <!--FOOTER-->
     <appFooter />
-
-
-
-
 
   </main>
 </template>
@@ -49,9 +43,18 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
   border: dashed white 1px;
+}
+
+.small_size {
+  width: 50px;
 }
 </style>
