@@ -35,6 +35,7 @@ export default {
 
 <style scoped>
 footer {
+    color: white;
     background-image: url(../assets/img/footer-bg.jpg);
     position: relative;
 }
@@ -43,8 +44,7 @@ footer {
     width: 100%;
     height: 80px;
     background-color: #303030;
-    position: absolute;
-    bottom: 0;
+
 }
 
 .foot-flex {

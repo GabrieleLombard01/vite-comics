@@ -14,27 +14,38 @@ export default {
 </script>
 
 <template>
-  <!--HEADER-->
-  <appHeader />
+  <div class="container-wrapper">
+    <!--HEADER-->
+    <appHeader />
 
-  <!--MAIN-CONTENT-->
-  <main>
+    <!--MAIN-CONTENT-->
+    <main class="main-content">
 
-    <!--JUMBO-->
-    <appJumbo />
+      <!--JUMBO-->
+      <appJumbo />
 
-    <!--CATEGORY-->
-    <appCategory />
+      <!--CATEGORY-->
+      <appCategory />
+
+    </main>
+
 
     <!--FOOTER-->
     <appFooter />
-
-  </main>
+  </div>
 </template>
 
 <style >
+.container-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
 main {
-  background-color: rgb(215, 215, 215);
   width: 100%;
   color: white;
 }
