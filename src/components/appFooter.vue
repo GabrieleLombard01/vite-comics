@@ -93,6 +93,10 @@ footer {
     position: relative;
 }
 
+.foot-flex img {
+    object-fit: contain;
+}
+
 .bg-logo {
     position: absolute;
     right: 5px;
@@ -109,6 +113,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 .blue_color {
