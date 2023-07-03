@@ -72,5 +72,9 @@ export default {
     gap: 10px;
 }
 
+.nav-cat li:hover {
+    background-color: rgba(0, 0, 0, 0.491);
+}
+
 /*...*/
 </style>

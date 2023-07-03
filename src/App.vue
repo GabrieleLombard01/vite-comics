@@ -150,7 +150,6 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
-  border: dashed white 1px;
 }
 
 .small_size {

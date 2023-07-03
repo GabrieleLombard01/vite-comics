@@ -85,7 +85,7 @@ export default {
 }
 
 .flex-header li:hover {
-    border-bottom: solid blue 2px;
+    border-bottom: solid #0282f9 2px;
     cursor: pointer;
 }
 
@@ -98,5 +98,9 @@ export default {
     justify-content: center;
     gap: 10px;
     padding-right: 40px;
+}
+
+.top-navbar li {
+    font-size: 20px;
 }
 </style>

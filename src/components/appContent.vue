@@ -29,16 +29,24 @@ export default {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 .card {
-    flex-basis: 15%;
+    flex-basis: calc(100% / 6);
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 .card img {
-    display: block;
-    width: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.423);
+    cursor: pointer;
 }
 
 /*...*/
