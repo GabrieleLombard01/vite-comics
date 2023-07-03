@@ -68,7 +68,8 @@ export default {
             </figure>
             <!--NAV:-->
             <ul class="top-navbar">
-                <li v-for="link in navbarLinks" :key="link.text" :class="{ 'current-link': link.current }">{{ link.text }}
+                <li v-for="link in navbarLinks" :key="link.text" :class="{ 'current-link': link.current }">
+                    <strong>{{ link.text }}</strong>
                 </li>
             </ul>
         </div>

@@ -161,7 +161,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
 }
 
 .blue_color {
