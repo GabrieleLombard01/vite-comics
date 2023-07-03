@@ -18,6 +18,10 @@ export default {
     <!--HEADER-->
     <appHeader />
 
+    <!--JUMBOTHRON-->
+    <div class="cover">
+    </div>
+
     <!--MAIN-CONTENT-->
     <main class="main-content">
 
@@ -68,5 +72,11 @@ a {
 
 .small_size {
   width: 50px;
+}
+
+.cover {
+  width: 100%;
+  height: 300px;
+  background-image: url(../src/assets/img/jumbotron.jpg);
 }
 </style>
