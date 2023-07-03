@@ -133,5 +133,12 @@ footer {
 .social-container img {
     padding-left: 5px;
     padding-right: 5px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.sign_button:hover {
+    background-color: #047eee;
+    cursor: pointer;
 }
 </style>

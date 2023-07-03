@@ -83,6 +83,13 @@ export default {
     height: 100px;
 }
 
+.flex-header li:hover {
+    border-bottom: solid blue 2px;
+    cursor: pointer;
+}
+
+
+
 /*NAV*/
 .top-navbar {
     display: flex;
