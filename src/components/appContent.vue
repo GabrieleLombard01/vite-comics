@@ -1,11 +1,9 @@
 <script>
 export default {
-    data() {
-        return {
-
-        }
+    props: {
+        products: Array
     }
-}
+};
 </script>
 
 <template>
