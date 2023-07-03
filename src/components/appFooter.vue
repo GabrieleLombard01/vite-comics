@@ -2,10 +2,72 @@
 export default {
     data() {
         return {
-
-        }
-    }
-}
+            footerLinks: [
+                {
+                    text: 'Characters',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Comics',
+                    url: '#',
+                    current: true,
+                },
+                {
+                    text: 'Movies',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'TV',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Games',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Collectibles',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Videos',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Fans',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'News',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Shop',
+                    url: '#',
+                    current: false,
+                },
+            ],
+        };
+    },
+    methods: {
+        getRandomLinks(count) {
+            const links = [...this.footerLinks];
+            const randomLinks = [];
+            for (let i = 0; i < count; i++) {
+                const randomIndex = Math.floor(Math.random() * links.length);
+                randomLinks.push(links.splice(randomIndex, 1)[0]);
+            }
+            return randomLinks;
+        },
+    },
+};
 </script>
 
 <template>
@@ -15,40 +77,20 @@ export default {
             <div class="lists">
                 <ul>
                     <h3 class="white-color">DC COMICS</h3>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
+                    <li v-for="link in getRandomLinks(7)" :key="link.text">{{ link.text }}</li>
                     <h3 class="white-color">SHOP</h3>
-                    <li>link</li>
-                    <li>link</li>
+                    <li v-for="link in getRandomLinks(2)" :key="link.text">{{ link.text }}</li>
                 </ul>
 
                 <ul>
                     <h3 class="white-color">DC</h3>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
+                    <li v-for="link in getRandomLinks(7)" :key="link.text">{{ link.text }}</li>
+                    <li v-for="link in getRandomLinks(5)" :key="link.text">{{ link.text }}</li>
                 </ul>
 
                 <ul>
                     <h3 class="white-color">SITES</h3>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
+                    <li v-for="link in getRandomLinks(5)" :key="link.text">{{ link.text }}</li>
                 </ul>
 
             </div>
@@ -83,6 +125,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     gap: 15px;
+    line-height: 27px;
 }
 
 
@@ -103,6 +146,11 @@ footer {
 }
 
 .white-color {
+    color: white;
+}
+
+.lists li:hover {
+    cursor: pointer;
     color: white;
 }
 
